@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Use CyclePlayView ↓"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <com.bigheart.library.CyclePlayView
+            android:id="@+id/cy_view1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Use CyclePlayView ↓"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <com.bigheart.library.CyclePlayView
+            android:id="@+id/cy_view2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <Button
+            android:id="@+id/bt_begin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cy_view"
+            android:text="update content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Use CyclePlayPager ↓"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <com.bigheart.library.CyclePlayPager
+            android:id="@+id/cy_pager"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+
+    </LinearLayout>
+
+</ScrollView>
